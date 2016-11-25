@@ -1,15 +1,22 @@
 """
 
 
-Written by Apollo Aggrey (apolloaggrey@students.uonbi.ac.ke).
+Written by Apolo Aggrey (apolloaggrey@students.uonbi.ac.ke.com).
 
 (c) Copyright , All Rights Reserved. NO WARRANTY.
 
 """
+import time
+import os
 ##########################################
-
-data_path = "C:\\Users\\apoll_1z1djr1\\Documents\\a_star_2\\data.txt"
-node_map = "C:\\Users\\apoll_1z1djr1\\Documents\\a_star_2\\node_map.txt"
+data_path = os.path.dirname(os.path.realpath(__file__))
+data_path = (str(data_path)[:]+"\data.txt")
+node_map = os.path.dirname(os.path.realpath(__file__))
+node_map = (str(data_path)[:]+"node_map.txt")
+print(data_path)
+print(node_map)
+#data_path = "C:\\Users\\apoll_1z1djr1\\Documents\\a_star_2\\data.txt" #modify to match the path of data.txt on your system
+#node_map = "C:\\Users\\apoll_1z1djr1\\Documents\\a_star_2\\node_map.txt"#modify to match the path of mode_map.txt on your system
 
 start = 'Arad'
 goal = 'Eforie'
@@ -17,13 +24,12 @@ through = None
 through2 = None
 through3 = None
 
-speed = float(.0)
+speed = float(0.2)
 show_progress = True
 units = "Kms"
 
 ###########################################
-import math
-import time
+
 
 class color:
    PURPLE = '\033[95m'
