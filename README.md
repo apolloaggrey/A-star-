@@ -1,5 +1,5 @@
 # A-star-
-a search algorithm that searches through data to find the shortest path.
+a search algorithm implemented in python3.5 that searches through data to find the shortest path.
 the A_star searches using data from the data file
 the data file should be of type csv with space delimitters
 the data file should not have any trailling lines or spaces but only thee columns.
