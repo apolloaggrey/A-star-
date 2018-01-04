@@ -160,7 +160,7 @@ def a_star(map,src: object,
     global starting
 
     try:
-        # compatibility checks
+        # sanity checks
         if src not in map:
             raise TypeError(src+color.RED+ 'the root of the shortest path tree cannot be found in the graph')
         if dest not in map:
